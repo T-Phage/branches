@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Solar Taxi Ghana is focused on accelerating the use and growth of renewable energy sources in conventional ways.">
+    <meta name="author" content="Hermann Mornah Anglania">
+    <meta name="designer" content="Hermann Mornah Anglania">
+
+    <title>Solar Taxi | EV Purchase-Hire-Purchase</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../assets/images/Solar-Taxi.png" sizes="192x192">
+
+</head>
+
+<body class="limiter">
+    <div class="container-login100">
+        <form id="purchaseForm" onsubmit="return false">
+            <div class="alert alert-info purchase-hire-purchase-alert-text">
+                Kindly note that you are to pay 40% of the principal as initial deposit.<br>The balance will be spread over the number of months specified under payment plan.
+                <div>&nbsp;</div>
+                <div class="centerMan">
+                    <span class="font-red text-center">Delivery of car is Forty (40) days after initial deposit has been made.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rentQuantityPurchase" class="bold">Number of Vehicles</label>
+                <input type="number" class="form-control" id="rentQuantityPurchase" aria-describedby="quantityHelp" required />
+                <small id="quantityHelp" class="form-text text-muted">Specify number of vehicles you're purchasing</small>
+            </div>
+            <div class="form-group">
+                <label for="paymentPurchase" class="bold">Payment Plan</label>
+                <select id="paymentPurchase" class="form-control" aria-describedby="paymentHelp" required>
+                    <option selected disabled value="" hidden>Choose Payment Plan Duration</option>
+                    <option value="Outright">Outright</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="1 year">1 year</option>
+                </select>
+                <small id="paymentHelp" class="form-text text-muted">Specify which payment plan best suits you.</small>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+                <label class="form-check-label bold" for="exampleCheck1">I Agree Solar Taxi's Purchase <a id="purchaseTC" style="color: #3b4eda">Terms and Conditions</a></label>
+                <div class="centerManAlt">
+                    Clicking on <span style="color: #3b4eda">Continue</span> means you agree to Solar Taxi's Purchase and Hire Purchase Terms and Conditions
+                </div>
+            </div>
+            <div class="previewer-main">
+                <div class="centerMan">
+                    <label class="bold text-center">fee calculation based on your options</label>
+                </div>
+                <div class="previewDiv">
+                    <div class="flex-row-item previewer-row">
+                        <small class="fee-cal-title">Compound Fee:</small>
+                        <strong><span id="outrightFee" style="font-size: large"></span></strong>
+                    </div>
+                    <div class="flex-row-item previewer-mid">
+                        <small class="fee-cal-title">Deposit Fee:</small>
+                        <strong><span id="pricerMain" style="font-size: large"></span></strong>
+                    </div>
+                    <div class="flex-row-item previewer-row">
+                        <small class="fee-cal-title">Monthly Fee:</small>
+                        <strong><span id="pricerMonthly" style="font-size: large"></span></strong>
+                    </div>
+                </div>
+            </div>
+            <div>&nbsp;</div>
+            <div class="centerMan" id="parentErrorDivPurchase">
+                <div id="errorDivPurchase"></div>
+            </div>
+            <div>&nbsp;</div>
+            <div class="centerMan">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-block btn-grey logBtnClass" id="CancelPurchaseFormBtn">Cancel</button>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-block btn-primary logBtnClass" id="continuePurchaseBtn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="PurchaseTypeWarningArea">
+            <div class="centerMan">
+                <div class="alert alert-danger">
+                    Sorry, we could not determine which car you choose, please wait while we will re-route you... <span id="PurchaseTypeWarning"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <script src="../assets/js/jquery.animateNumber.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/jquery.stellar.min.js"></script>
+    <script src="../assets/js/jquery.easing.1.3.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/typed.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/purchasehire-sentinel.js"></script>
+
+</body>
+
+</html>

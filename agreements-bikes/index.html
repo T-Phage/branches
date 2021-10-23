@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Agreements | Solar Taxi Ghana</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="designer" content="Mornah Hermann Anglania">
+    <meta name="author" content="Mornah Hermann Anglania">
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/modaller.css">
+    <link rel="shortcut icon" href="../assets/images/Solar-Taxi.png" sizes="192x192">
+
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100-alt p-l-55 p-r-55 p-t-65 p-b-50">
+                <div class="centerMan">
+                    <img src="../assets/images/Solar-Taxi.png" alt="Solar Taxi" height="90px">
+                    <h4 class="purchaseAgreementHead">Purchase Agreements</h4>
+                    <p>Choose which agreement applies to order to view Terms and Conditions</p><br>
+                    <h5 id="purchaseTypeChosen"></h5>
+                    <div>&nbsp;</div>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div class="row justify-content-around agreementBtnRow">
+                    <div class="col-sm-* col-md-* col-lg-* col-*">
+                        <a href="#0" id="purchaseAgreement" class="btn btn-dark">Purchase Agreement</a>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="col-sm-* col-md-* col-lg-* col-*">
+                        <a href="#0" id="hirePurchaseAgreement" class="btn btn-dark">Hire Purchase Agreement</a>
+                    </div>
+                    <div class="col-sm-* col-md-* col-lg-* col-*">
+                        <a href="#0" id="purchaseAgreement" class="btn btn-dark">Courier</a>
+                        <div>&nbsp;</div>
+                    </div>
+                    <div class="col-sm-* col-md-* col-lg-* col-*">
+                        <a href="#0" id="hirePurchaseAgreement" class="btn btn-dark">Franchise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="hirePurchaseAgreementModal" tabindex="-1" role="dialog" aria-labelledby="hirePurchaseAgreementModalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="agreementHeader"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="centerMan">
+                        <span><img id="vehicleImg" alt="" height="50px"></span>
+                    </div>
+                    <div id="pdfZone" class="fluid-container"></div>
+                </div>
+                <div class="centerMan">
+                    <div class="container">
+                        <small style="color: red;">Click or Tab on Download if document is not visible or if your browser does not support viewing PDF content</small><br>
+                        <a href="#0" id="docDownloadHirePurchase" class="btn btn-dark">Download Instead</a>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="purchaseAgreementModal" tabindex="-1" role="dialog" aria-labelledby="purchaseAgreementModalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="agreementHeaderOutright"></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="centerMan">
+                        <span><img id="vehicleImgOutright" alt="" height="50px"></span>
+                    </div>
+                    <div id="pdfZoneOutright" class="fluid-container"></div>
+                </div>
+                <div class="centerMan">
+                    <div class="container">
+                        <small style="color: red;">Click or Tab on Download if document is not visible or if your browser does not support viewing PDF content</small><br>
+                        <a href="#0" id="docDownloadHirePurchase" class="btn btn-dark">Download Instead</a>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../assets/vendor/animsition/js/animsition.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/select2/select2.min.js"></script>
+    <script src="../assets/vendor/daterangepicker/moment.min.js"></script>
+    <script src="../assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="../assets/vendor/countdowntime/countdowntime.js"></script>
+    <script src="../assets/js/pdfObject.js"></script>
+
+</body>
+
+</html>

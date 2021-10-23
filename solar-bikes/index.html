@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Solar Taxi EV Rental and Purchase Platform - Solar Taxi Ghana is focused on accelerating the use and growth of renewable energy sources in conventional ways." />
+    <meta name="keywords" content="solar taxi, electric vehicles, EVs, Electric Vehicles in Ghana" />
+    <meta name="author" content="Hermann Mornah Anglania" />
+    <meta name="designer" content="Hermann Mornah Anglania" />
+
+    <title>Solar Bikes | Solar Taxi</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/dragdealer.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/form-boot/bootstrap.css" />
+    <link rel="shortcut icon" href="../assets/images/Solar-Taxi.png" />
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="../assets/js/firebase.js"></script>
+    <script src="../assets/js/modernizr.custom.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155291373-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-155291373-1");
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="solar-top clearfix">
+            <a class="solar-icon top-nav-text" href="../">
+                <i class="fa fa-arrow-left"></i><span> <i class="fa fa-home"></i></span>
+            </a>
+            <span class="right">
+                <a class="solar-icon top-nav-text" href="../solar-cars/">
+                    <span><i class="fa fa-car"></i> <i class="fa fa-arrow-right"></i></span>
+                </a>
+            </span>
+        </div>
+        <header id="header" class="solar-header">
+            <h1>Solar Bikes</h1>
+            <span class="message">EVs</span>
+            <button class="slider-switch">Switch view</button>
+        </header>
+        <div id="overlay" class="overlay">
+            <div class="info">
+                <h2>HOW TO NAVIGATE</h2>
+                <span class="info-drag">Drag Screens</span>
+                <span class="info-keys">Use Arrows Keys</span>
+                <span class="info-switch">View all</span>
+                <button>Got it!</button>
+            </div>
+        </div>
+        <div id="slideshow" class="dragslider">
+            <section class="img-dragger img-dragger-large dragdealer">
+                <div class="handle">
+
+                    <div class="slide" data-content="content-1">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/Orange-Bike-Without-Screen-Front.jpg" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Delivery Bike
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">200km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">6 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Full Charge Time</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">120km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">See More</button>
+                    </div>
+
+                    <div class="slide" data-content="content-1">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/Orange-Bike-Front-View-alt.jpg" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Delivery Bike
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">200km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">6 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Full Charge Time</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">120km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">See More</button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="pages">
+
+                <div class="content" data-content="content-1">
+                    <h2>Electric Deliver Bike<span>Solar Bike</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/Orange-Bike-Front-View-alt.jpg" width="100%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">120 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid">
+                                <div class="headerVal-Alt">150 N m</div>
+                                <div class="headerText-Alt">Torque</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/triumph-project-te1-electric-superbike-motor-integral-powertrain.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">30 kW</div>
+                                    <div class="headerText-Alt">Motor Power <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">200 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/bike-bat-pat.jpg" alt="battery-train" width="70%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">6 Hours</div>
+                                    <div class="headerText-Alt">Full Charge Time</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">35.2 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/motor-show-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/motor-show-02.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/motor-show-03.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/motor-show-04.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">LOCATION</span>
+                                </div>
+                                <div class="pricer_text">BASED</div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="electricDelBikeRent">RENT</button>
+                                    <!-- <button class="buyCarBtn" id="Cherry3XERentAlt">RENT</button> -->
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    18,000
+                                </div>
+                                <div class="pricer_text">PURCHASE PRICE</div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="electricDelBikeBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="purchaserModal" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-content">
+                <span class="close" id="purchaserModalClose">&times;</span>
+                <div id="contentDiv" class="contentDiv">
+                    <div align="center">
+                        <h2>Purchase Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <!--<div align="center">System Currently under maintenance, try again later.</div>-->
+                    <form id="purchaseForm">
+                        <div class="form-group">
+                            <label for="rentQuantityPurchase">Quantity</label>
+                            <input type="number" class="form-control" id="rentQuantityPurchase" aria-describedby="quantityHelp" placeholder="1" required />
+                            <small id="quantityHelp" class="form-text text-muted">Specify number of vehicles you're
+                                renting</small>
+                        </div>
+                        <!--<div class="form-group">
+                            <label for="dailyMileage">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="dailyMileage" aria-describedby="mileageHelp" placeholder="E.g. 22km" required>
+                            <small id="mileageHelp" class="form-text text-muted">Provide your average or estimated daily mileage</small>
+                        </div>-->
+                        <!--<div class="form-group">
+                            <label for="driverType">Do you prefer self-drive or a dedicated driver?</label>
+                            <select id="driverType" class="form-control" aria-describedby="driverTypeHelp" required>
+                                <option selected disabled value="" hidden>Choose an Option</option>
+                                <option value="self">Self Drive</option>
+                                <option value="dedicated">Dedicated Driver</option>
+                            </select>
+                            <small id="driverTypeHelp" class="form-text text-muted">Pick a choice</small>
+                        </div>-->
+                        <div class="form-group">
+                            <label for="paymentPurchase">Payment Plan</label>
+                            <select id="paymentPurchase" class="form-control" aria-describedby="paymentHelp" required>
+                                <option selected disabled value="" hidden>
+                                    Choose Payment Plan
+                                </option>
+                                <option value="Outright">Outright</option>
+                                <option value="3 months">3 months</option>
+                                <option value="6 months">6 months</option>
+                                <option value="1 year">1 year</option>
+                            </select>
+                            <small id="paymentHelp" class="form-text text-muted">Specify which Payment Plan Best Suits
+                                you.</small>
+                        </div>
+                        <!--<div class="form-group">
+                            <label for="commuteRoute">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="commuteRoute" aria-describedby="commuteRouteHelp" placeholder="Accra - Tema" required>
+                            <small id="commuteRouteHelp" class="form-text text-muted">Provide your estimated commute route</small>
+                        </div>-->
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+                            <label class="form-check-label" for="exampleCheck1">I Agree Solar Taxi's Purchase
+                                <a id="purchaseTC" style="color: #3b4eda" target="_blank">Terms and
+                                    Conditions</a></label>
+                            <div align="center">
+                                Clicking on
+                                <span style="color: #3b4eda">Continue</span>
+                                means you agree to Solar Taxi's Purchase and
+                                Hire Purchase Terms and Conditions
+                            </div>
+                        </div>
+                        <div class="previewDiv">
+                            <div class="flex-row-item">
+                                Total Fee:
+                                <strong><span id="outrightFee" style="font-size: large"></span></strong>
+                            </div>
+                            <div class="flex-row-item">
+                                Plan Fee:
+                                <strong><span id="pricerMain" style="font-size: large"></span></strong>
+                            </div>
+                            <div class="flex-row-item">
+                                Monthly Fee:
+                                <strong><span id="pricerMonthly" style="font-size: large"></span></strong>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="parentErrorDivPurchase" align="center">
+                            <div id="errorDivPurchase"></div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div align="center">
+                            <button type="submit" class="btn btn-dark" id="continuePurchaseBtn">
+                                Continue
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="renterAltModal" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-content">
+                <span class="close" id="renterAltModalClose">&times;</span>
+                <div id="contentDiv" class="contentDiv">
+                    <div align="center">
+                        <h2>Rental Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="maintenance error-out" align="center">
+                        Ooops... Overwhelming orders. 
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="maintenanceAlt error-out" align="center">
+                        Sorry, We have over 400 orders that need processing. We will notify you when we resume taking orders.<br>
+                        This won't take long, please leave an email address so we notify you soon as we're done.
+                    </div>
+                    <div>&nbsp;</div>
+                    <form id="rentalFormAlt" onsubmit="return false">
+                        <div class="maintenanceEmail">Email</div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="subsEmail" aria-describedby="quantityHelp" placeholder="example@email.com" required />
+                            <small id="quantityHelp" class="form-text text-muted">Enter your email address</small>
+                        </div>
+                        <div class="centerManAlt" id="maintenanceMessage"></div>
+                        <div>&nbsp;</div>
+                        <div align="center">
+                            <button type="submit" class="btn btn-dark" id="continueSubscribeBtn">Subscribe <span id="continueSubscribeBtnGIF"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="rentModalElectBike" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-content">
+                <span class="close" id="rentModalBikeClose">&times;</span>
+                <div id="contentDiv" class="contentDiv">
+                    <div align="center">
+                        <h2>Rental Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <form id="rentalForm">
+                        <div class="form-group">
+                            <label for="rentQuantity">Quantity</label>
+                            <input type="number" class="form-control" id="rentQuantity" aria-describedby="quantityHelp" placeholder="1" required>
+                            <small id="quantityHelp" class="form-text text-muted">Specify number of vehicles you're renting</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="dailyMileage">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="dailyMileage" aria-describedby="mileageHelp" placeholder="E.g. 22km" required>
+                            <small id="mileageHelp" class="form-text text-muted">Provide your average or estimated daily mileage</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="rentForm">Choose which form of Hiring you want</label>
+                            <select id="rentForm" class="form-control" aria-describedby="rentFormHelp" required>
+                                <option selected disabled value="" hidden>Choose a form of Hiring</option>
+                                <option value="Franchise">Franchise</option>
+                                <option value="Courier">Courier</option>
+                            </select>
+                            <small id="rentFormHelp" class="form-text text-muted">Choose a form of Hiring</small>
+                        </div>
+                        <div id="rentDurationDiv">
+                            <div class="form-group">
+                                <label for="duration">Rent Duration</label>
+                                <select id="duration" class="form-control" aria-describedby="durationHelp" required>
+                                    <option selected disabled value="" hidden>Choose duration</option>
+                                    <option value="1 month">1 Month</option>
+                                    <option value="2 months">2 Months</option>
+                                    <option value="3 months">3 Months</option>
+                                    <option value="4 months">4 Months</option>
+                                    <option value="5 months">5 Months</option>
+                                    <option value="6 months">6 Months</option>
+                                    <option value="7 months">7 Months</option>
+                                    <option value="8 months">8 Months</option>
+                                    <option value="9 months">9 Months</option>
+                                    <option value="10 months">10 Months</option>
+                                    <option value="11 months">11 Months</option>
+                                    <option value="12 months">12 Months</option>
+                                </select>
+                                <small id="durationHelp" class="form-text text-muted">Specify how long you want to Rent your vehicle for</small>
+                            </div>
+                        </div>
+                        <div id="rentFeeDiv" align="center"></div>
+                        <div class="form-group">
+                            <label for="commuteRoute">Estimated Commute Route</label>
+                            <input type="text" class="form-control" id="commuteRoute" aria-describedby="commuteRouteHelp" placeholder="Accra - Tema" required>
+                            <small id="commuteRouteHelp" class="form-text text-muted">Provide your estimated commute route</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">I Agree Solar Taxi's Rental <a id="rentTC" style="color: #3b4eda;" target="_blank">Terms and Conditions</a></label>
+                            <div align="center">Clicking on <span style="color: #3b4eda;">Continue</span> means you agree to Solar Taxi's Rental Terms and Conditions</div>
+                        </div>
+                        <div id="parentErrorDiv" align="center">
+                            <div id="errorDiv"></div>
+                            <div>&nbsp;</div>
+                        </div>
+                        <div align="center">
+                            <button type="submit" class="btn btn-dark" id="continueRentBtn">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close" id="rentModalBikeClose">&times;</span>
+                <div class="contentDiv">
+                    <div align="center">
+                        <h2>Purchase Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div align="center">System Currently under maintenance, try again later.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="purchaserModalElectBike" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="purchaserModalClose">&times;</span>
+                <div id="contentDiv" class="contentDiv">
+                    <div align="center">
+                        <h2>Purchase Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <!--<div align="center">System Currently under maintenance, try again later.</div>-->
+                    <form id="purchaseFormBike">
+                        <div class="form-group">
+                            <label for="rentQuantityPurchaseBike">Quantity</label>
+                            <input type="number" class="form-control" id="rentQuantityPurchaseBike" aria-describedby="bikeQuantityHelp" placeholder="1" required>
+                            <small id="bikeQuantityHelp" class="form-text text-muted">Specify number of vehicles you're renting</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentPurchaseBike">Payment Plan</label>
+                            <select id="paymentPurchaseBike" class="form-control" aria-describedby="bikeMonthlyHelp" required>
+                                <option selected disabled value="" hidden>Choose Payment Plan</option>
+                                <option value="Outright">Outright</option>
+                                <option value="5 months">5 months </option>
+                                <option value="10 months">10 months</option>
+                            </select>
+                            <small id="bikeMonthlyHelp" class="form-text text-muted">Specify which Payment Plan Best Suits you.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="TCCheckBike" required>
+                            <label class="form-check-label" for="TCCheckBike">I Agree Solar Taxi's Purchase <a id="purchaseTCBike" style="color: #3b4eda;" target="_blank">Terms and Conditions</a></label>
+                            <div class="centerMan">
+                                Clicking on <span style="color: #3b4eda;">Continue</span> means you agree to Solar Taxi's Purchase Terms and Conditions
+                            </div>
+                        </div>
+                        <div class="previewDiv">
+                            <div class="flex-row-item">Plan Fee: <strong><span id="pricerMainBike" style="font-size: large;"></span></strong></div>
+                            <div class="flex-row-item">Monthly Fee: <strong><span id="pricerMonthlyBike" style="font-size: large;"></span></strong></div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="centerMan" id="parentErrorDivPurchaseBike">
+                            <div id="errorDivPurchaseBike"></div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="centerMan">
+                            <button type="submit" class="btn btn-dark" id="continuePurchaseBtnBike">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/dragdealer.js"></script>
+    <script src="../assets/js/classie.js"></script>
+    <script src="../assets/js/dragslideshow.js"></script>
+    <script src="../assets/js/electricbikes.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script>
+
+        (function () {
+
+            var overlay = document.getElementById("overlay"),
+                overlayClose = overlay.querySelector("button"),
+                header = document.getElementById("header"),
+                switchBtnn = header.querySelector("button.slider-switch"),
+                toggleBtnn = function () {
+
+                    if (slideshow.isFullscreen) {
+                        classie.add(switchBtnn, "view-maxi");
+                    } else {
+                        classie.remove(switchBtnn, "view-maxi");
+                    }
+
+                },
+                toggleCtrls = function () {
+
+                    if (!slideshow.isContent) {
+                        classie.add(header, "hide");
+                    }
+
+                },
+                toggleCompleteCtrls = function () {
+
+                    if (!slideshow.isContent) {
+                        classie.remove(header, "hide");
+                    }
+
+                },
+                slideshow = new DragSlideshow(
+                    document.getElementById("slideshow"),
+                    {
+                        // toggle between fullscreen and minimized slideshow
+                        onToggle: toggleBtnn,
+                        // toggle the main image and the content view
+                        onToggleContent: toggleCtrls,
+                        // toggle the main image and the content view (triggered after the animation ends)
+                        onToggleContentComplete: toggleCompleteCtrls,
+                    }
+                ),
+                toggleSlideshow = function () {
+
+                    slideshow.toggle();
+                    toggleBtnn();
+
+                },
+                closeOverlay = function () {
+                    classie.add(overlay, "hide");
+                };
+
+            // toggle between fullscreen and small slideshow
+            switchBtnn.addEventListener("click", toggleSlideshow);
+            // close overlay
+            overlayClose.addEventListener("click", closeOverlay);
+
+            $(document).ready(function () {
+
+                $('.owl-carousel').owlCarousel({
+                    center: true,
+                    items: 1,
+                    loop: true,
+                    stagePadding: 0,
+                    margin: 20,
+                    smartSpeed: 1000,
+                    autoplay: true,
+                    nav: false,
+                    dots: true,
+                    responsive: {
+                        600: {
+                            margin: 20,
+                            nav: true,
+                            items: 2
+                        },
+                        1000: {
+                            margin: 20,
+                            stagePadding: 0,
+                            nav: true,
+                            items: 3
+                        }
+                    }
+
+                });
+
+                $('.custom-next').click(function (e) {
+
+                    e.preventDefault();
+                    $('.owl-carousel').trigger('next.owl.carousel');
+
+                });
+
+                $('.custom-prev').click(function (e) {
+
+                    e.preventDefault();
+                    $('.owl-carousel').trigger('prev.owl.carousel');
+
+                });
+
+            });
+
+            AOS.init({
+                duration: 800,
+                easing: 'slide',
+                once: false
+            });
+
+        })();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout | Solar Taxi</title>
+
+    <script>
+
+        window.addEventListener('load', (event) => {
+
+            if (!!sessionStorage.getItem('user')) {
+
+                window.sessionStorage.removeItem('user');
+                window.localStorage.removeItem('counter');
+                window.sessionStorage.removeItem('userID');
+
+                window.sessionStorage.removeItem('vehicleID');
+                window.sessionStorage.removeItem('type');
+                window.sessionStorage.removeItem('is_Active');
+                window.sessionStorage.removeItem('driverType');
+                window.sessionStorage.removeItem('dailyMileage');
+                window.sessionStorage.removeItem('quantity');
+                window.sessionStorage.removeItem('cost');
+                window.sessionStorage.removeItem('duration');
+                window.sessionStorage.removeItem('commuteRoute');
+
+                window.location.replace("../");
+
+            } else {
+                window.location.replace("../login");
+            }
+
+        });
+
+    </script>
+
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Order List & Profile | Solar Taxi</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Hermann Mornah Anglania">
+    <meta name="designer" content="Hermann Mornah Anglania">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/Solar-Taxi.png" sizes="192x192">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155291373-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155291373-1');
+    </script>
+
+</head>
+
+<body class="orders-section" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div class="site-wrap" id="home-section">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center position-relative">
+
+                    <div class="col-3 ">
+                        <div class="site-logo">
+                            <a href="../" class="font-weight-bold"><img src="../assets/images/Solar-Taxi.png" alt="" height="80px"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-9 text-right">
+                        <span class="d-inline-block d-lg-none"><a href="#" class="text-primary site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-primary"></span></a>
+                        </span>
+                        <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav ml-auto">
+                                <li><a href="../" class="nav-link">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">Solar Vehicles <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <div class="service-dropdown-alt"><a href="../solar-cars/" class="nav-link">Solar Cars <img src="../assets/images/img-header.png" height="20px"></a></div>
+                                        </li>
+                                        <li>
+                                            <div class="service-dropdown-alt"><a href="../solar-bikes/" class="nav-link">Solar Bikes <img src="../assets/images/img/Orange-Bike-Without-Screen-Front-alt.png" height="20px"></a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <div class="service-dropdown-alt">
+                                                <a href="../solar-campus/" class="nav-link">Solar Campus</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="service-dropdown-alt">
+                                                <a href="../battery-development/" class="nav-link">Battery Devt</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="../contact/" class="nav-link">Contact Us</a></li>
+                                <li class="active"><a href="./" class="nav-link">Orders</a></li>
+                                <li><a class="nav-link" href="../logout/" id="logoutBtn"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="site-section bg-left-half unSee">
+
+            <div class="container">
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <button id="showProfileBtn" class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseProfileDiv" aria-expanded="false" aria-controls="collapseProfileDiv">SEE YOUR DETAILS</button>
+            </div>
+
+            <div class="container collapse" id="collapseProfileDiv">
+
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <div class="p-3 p-md-5">
+                            <h3 class="text-black mb-4">Your Info</h3>
+                            <ul class="list-unstyled footer-link">
+                                <li class="d-block mb-3">
+                                    <span class="d-block text-black">Name:</span>
+                                    <span id="userName"></span>
+                                </li>
+                                <li class="d-block mb-3">
+                                    <span class="d-block text-black">Email:</span>
+                                    <span id="userEmail"></span>
+                                </li>
+                                <li class="d-block mb-3">
+                                    <span class="d-block text-black">Phone:</span>
+                                    <span id="userPhone"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 mb-5">
+                        <div class="p-3 p-md-5">
+                            <h3 class="text-black mb-4">Edit Your Details</h3>
+                            <form id="editDetailsForm" onsubmit="return false">
+                                <div class="form-group row">
+                                    <div class="col-md-6 mb-4 mb-lg-0">
+                                        <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="tel" class="form-control" id="inPhone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+
+                                <div class="centerMan" id="parentalDiv">
+                                    <div id="formFormer"></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6 mr-auto">
+                                        <button class="btn btn-dark py-3 px-5" type="submit" id="editFromSaveBtn">Save Changes</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ftco-blocks-cover-1">
+            <div class="site-section">
+                <div class="container order-holding">
+                    <div class="user-details-container">
+                        <div class="card profile-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Profile <sub><span class="font-small" id="displayUserEmail"></span></sub> </h3>
+                                <div>&nbsp;</div>
+                                <form id="editUserDetailsForm" onsubmit="return false">
+                                    <div class="row justify-content-around order-row">
+                                        <div class="col-* col-xs-* col-sm-* col-md-* col-lg-*">
+                                            Full Name: <span class="bold" id="displayUserName"></span><span id="edit-pencil-sup-span"><sup class="edit-pencil-sup"><i class="fa fa-pencil" id="edit-pencil-sup"></i></sup></span>
+                                        </div>
+                                        <div class="col-* col-xs-* col-sm-* col-md-* col-lg-*">
+                                            Phone Number: <span class="bold" id="displayUserPhone"></span><span id="edit-pencil-supAlt-span"><sup class="edit-pencil-sup"><i class="fa fa-pencil" id="edit-pencil-supAlt"></i></sup></span>
+                                        </div>
+                                    </div>
+                                    <div>&nbsp;</div>
+                                    <div class="centerMan">
+                                        <div id="editFormMessenger"></div>
+                                    </div>
+                                    <div>&nbsp;</div>
+                                    <div class="edit-form-actions-container" id="edit-form-actions-container">
+                                        <div class="centerMan">
+                                            <button type="submit" class="btn btn-primary" id="editFormSubBtn">Submit changes</button>
+                                            <a href="javascript:;" id="editFormCancelBtn">Cancel</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <div id="orderThroughAlt"></div>
+                    </div>
+                    <h2>Your Orders</h2>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <strong class="uppercase bold">Payment verification:</strong> <small>You can verify payment by clicking on the VERIFY PAYMENT button and submitting the transaction ID provided by Solar Taxi Ghana.</small>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="centerMan">
+                        <div id="orderThrough"></div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan" id="parentMessageDiv">
+                        <div id="messageDiv"></div>
+                        <div id="messageDivAlt"></div>
+                    </div>
+                    <div id="cards"></div>
+                    <div id="messagerDiv"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editOrderModalRent" tabindex="-1" role="dialog" aria-labelledby="editOrderModalRentTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="centerMan">
+                        <h4 class="modal-title" id="exampleModalLongTitle">Edit Your Order - Rental</h4>
+                        <small><span class="bold">Your Order ID:</span> <span id="vehicleIDRent"></span></small>
+                        <small class="notice bold">Kindly note that editing your order can affect your estimated delivery date.</small>
+                    </div>
+                    <div>&nbsp;</div>
+                    <form id="rentalEditForm">
+                        <div class="form-group">
+                            <label for="rentQuantity" class="bold">Quantity</label>
+                            <input type="number" class="form-control" id="rentQuantity" aria-describedby="quantityHelp" placeholder="1" required>
+                            <small id="quantityHelp" class="form-text text-muted">Specify number of vehicles you're renting</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="dailyMileage" class="bold">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="dailyMileage" aria-describedby="mileageHelp" placeholder="E.g. 22km" required>
+                            <small id="mileageHelp" class="form-text text-muted">Provide your average or estimated daily mileage</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="driverType" class="bold">Do you prefer self-drive or a dedicated driver?</label>
+                            <select id="driverType" class="form-control" aria-describedby="driverTypeHelp" required>
+                                <option selected disabled value="" hidden>Choose an Option</option>
+                                <option value="self">Self Drive</option>
+                                <option value="dedicated">Dedicated Driver</option>
+                            </select>
+                            <small id="driverTypeHelp" class="form-text text-muted">Pick a choice</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration" class="bold">Rent Duration</label>
+                            <select id="duration" class="form-control" aria-describedby="durationHelp" required>
+                                <option selected disabled value="" hidden>Choose duration</option>
+                                <option value="1 month">1 month</option>
+                                <option value="2 months">2 months</option>
+                                <option value="3 months">3 months</option>
+                                <option value="4 months">4 months</option>
+                                <option value="5 months">5 months</option>
+                                <option value="6 months">6 months</option>
+                                <option value="7 months">7 months</option>
+                                <option value="8 months">8 months</option>
+                                <option value="9 months">9 months</option>
+                                <option value="10 months">10 months</option>
+                                <option value="11 months">11 months</option>
+                                <option value="12 months">12 months</option>
+                            </select>
+                            <small id="durationHelp" class="form-text text-muted">Specify how long you want to Rent your vehicle for</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="rentalPackage" class="bold">Rental Package</label>
+                            <select id="rentalPackage" class="form-control" aria-describedby="rentalPackageHelp" required>
+                                <option selected disabled value="" hidden>Choose a package</option>
+                                <option value="Corporate Package">Corporate Package</option>
+                                <option value="Standard Individual Package">Standard Individual Package</option>
+                                <option value="Premium Individual Package">Premium Individual Package</option>
+                                <option value="Executive Individual Package">Executive Individual Package</option>
+                            </select>
+                            <small id="rentalPackageHelp" class="form-text text-muted">Specify how long you want to Rent your vehicle for</small>
+                        </div>
+                        <div id="rentFeeDiv" class="centerMan"></div>
+                        <div class="form-group">
+                            <label for="commuteRoute" class="bold">Estimated Commute Route</label>
+                            <input type="text" class="form-control" id="commuteRoute" aria-describedby="commuteRouteHelp" placeholder="Accra - Tema" required>
+                            <small id="commuteRouteHelp" class="form-text text-muted">Provide your estimated commute route</small>
+                        </div>
+                        <div id="parentErrorDiv" class="centerMan">
+                            <div id="errorDiv"></div>
+                            <div id="rentMsgDiv"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-*">
+                                <button type="button" class="btn btn-danger logBtnClass" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+                            </div>
+                            <div class="col-*">&nbsp;</div>
+                            <div class="col-*">
+                                <button type="submit" class="btn btn-primary logBtnClass" id="saveRentEdit"><i class="fa fa-check"></i> Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editOrderModalBuy" tabindex="-1" role="dialog" aria-labelledby="editOrderModalBuyTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div align="center">
+                        <h4 class="modal-title" id="exampleModalLongTitle">Edit Your Order - Purchase</h4>
+                        <small>Your Order ID: <span id="vehicleIDBuy"></span></small>
+                    </div>
+                    <form id="purchaseForm">
+                        <div class="form-group">
+                            <h5 for="buyQuantityPurchase">Quantity</h5>
+                            <input type="number" class="form-control" id="buyQuantityPurchase" aria-describedby="quantityHelpBuy" placeholder="1" required>
+                            <small id="quantityHelpBuy" class="form-text text-muted">Specify number of vehicles you're renting</small>
+                        </div>
+                        <div class="form-group">
+                            <h5 for="paymentPurchaseBuy">Payment Plan</h5>
+                            <select id="paymentPurchaseBuy" class="form-control" aria-describedby="paymentHelpBuy" required>
+                                <option selected disabled value="" hidden>Choose Payment Plan</option>
+                                <option value="Outright">Outright</option>
+                                <option value="3 months">3 months </option>
+                                <option value="6 months">6 months</option>
+                                <option value="1 year">1 year</option>
+                            </select>
+                            <small id="paymentHelpBuy" class="form-text text-muted">Specify which Payment Plan Best Suits you.</small>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="parentErrorDivPurchaseBuy" align="center">
+                            <div id="errorDivPurchaseBuy"></div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div align="center">
+                            <button type="button" class="btn btn-danger logBtnClass" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
+                            <button type="submit" class="btn btn-primary logBtnClass" id="saveBuyEdit"><i class="fa fa-check"></i> Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="paymentVerifyModal" tabindex="-1" role="dialog" aria-labelledby="paymentVerifyModalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bold" id="paymentVerifyModalTitle">Verify Payment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="centerMan">
+                        <small>Order ID: <span id="verifyOrderID"></span></small>
+                        <h3 id="verifyOrderType"></h3>
+                        <h5 id="verifyCarName"></h5><br>
+                        <span id="verifyOrderDetails"></span>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <form id="txrefForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="txReffInput" aria-describedby="txReffInputHelp" placeholder="Enter Transaction ID" required>
+                                <small id="txReffInputHelp" class="form-text text-muted">Your Transaction ID is a one time payment verification ID provided by Solar Taxi Ghana at time of payment.</small>
+                            </div>
+                            <div id="messengerVerify" class="centerMan"></div>
+                            <div>&nbsp;</div>
+                            <div class="row justify-content-center">
+                                <div class="col-*">
+                                    <button type="button" class="btn btn-danger logBtnClass" data-dismiss="modal"><i class="fa fa-close"></i> cancel</button>
+                                </div>
+                                <div class="col-*">&nbsp;</div>
+                                <div class="col-*">
+                                    <button class="btn btn-primary logBtnClass" type="submit" id="verifyPaymentsBtn"><i class="fa fa-check"></i> Verify Payment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nullEditOrderModal" tabindex="-1" role="dialog" aria-labelledby="nullEditOrderModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bold">Edit your Order</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning">
+                        <span class="bold">You cannot edit an order that has been confirmed</span>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <small class="bold">Click away to close this modal</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bold" id="confirmOrderType"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning">
+                        Please note that you cannot edit your order once it has been confirmed.
+                    </div>
+                    <div class="centerMan">
+                        <div id="confirmOrderID"></div>
+                        <div id="confirmOrderDetails"></div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <div id="parentMessageDivModal">
+                            <div id="messageDivInModal"></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <button class="btn btn-primary logBtnClass" type="button" id="confirmBtnModal"><i class="fa fa-check"></i> Confirm & Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nonConfirmModal" tabindex="-1" role="dialog" aria-labelledby="nonConfirmModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bold" id="nonConfirmOrderType"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger">
+                        <div class="bold">This Order has been Confirmed Already</div>
+                    </div>
+                    <div class="centerMan">
+                        <div id="nonConfirmOrderID"></div>
+                        <div id="nonConfirmOrderDetails"></div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan">
+                        <div id="parentMessageDivModal">
+                            <div id="messageDivInModal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmCancel" tabindex="-1" role="dialog" aria-labelledby="cancelModalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title bold" id="cancelOrderType"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="centerMan">
+                        <h5 style="color: red;">Are you sure you want to cancel this order ?</h5>
+                    </div>
+                    <div class="centerMan" id="cancelOrderID"></div>
+                    <div class="centerMan" id="cancelOrderDetails"></div>
+                    <div class="centerMan">
+                        <div id="cancelMessageDivModal">
+                            <div id="cancelDivInModal"></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="row justify-content-center">
+                        <div class="col-*">
+                            <button class="btn btn-danger logBtnClass" type="button" id="cancelBtnModal">Cancel Order</button>
+                        </div>
+                        <div class="col-*">&nbsp;</div>
+                        <div class="col-*">
+                            <button class="btn btn-info logBtnClass" type="button" data-dismiss="modal" aria-label="Close">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <script src="../assets/js/jquery.animateNumber.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/jquery.stellar.min.js"></script>
+    <script src="../assets/js/jquery.easing.1.3.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/typed.js"></script>
+    <script src="../assets/js/orderposter.js"></script>
+    <script src="../assets/js/orders.js"></script>
+    <script src="../assets/js/bootstay.js"></script>
+
+</body>
+
+</html>

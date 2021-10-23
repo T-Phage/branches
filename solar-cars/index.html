@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Solar Taxi EV Rental and Purchase Platform - Solar Taxi Ghana is focused on accelerating the use and growth of renewable energy sources in conventional ways." />
+    <meta name="keywords" content="solar taxi, electric vehicles, EVs, Electric Vehicles in Ghana" />
+    <meta name="author" content="Hermann Mornah Anglania" />
+    <meta name="designer" content="Hermann Mornah Anglania" />
+
+    <title>Solar Cars | Solar Taxi</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/dragdealer.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/form-boot/bootstrap.css" />
+    <link rel="shortcut icon" href="../assets/images/Solar-Taxi.png" />
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="../assets/js/firebase.js"></script>
+    <script src="../assets/js/modernizr.custom.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155291373-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-155291373-1");
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="solar-top clearfix">
+            <a class="solar-icon top-nav-text" href="../">
+                <i class="fa fa-arrow-left"></i><span> <i class="fa fa-home"></i></span>
+            </a>
+            <span class="right">
+                <a class="solar-icon top-nav-text" href="../solar-bikes/">
+                    <span><i class="fa fa-motorcycle"></i> <i class="fa fa-arrow-right"></i></span>
+                </a>
+            </span>
+        </div>
+        <header id="header" class="solar-header">
+            <h1>Solar Cars</h1>
+            <span class="message">EVs</span>
+            <button class="slider-switch">Switch view</button>
+        </header>
+        <div id="overlay" class="overlay">
+            <div class="info">
+                <h2>HOW TO NAVIGATE</h2>
+                <span class="info-drag">Drag Screens</span>
+                <span class="info-keys">Use Arrows Keys</span>
+                <span class="info-switch">View all</span>
+                <button>Got it!</button>
+            </div>
+        </div>
+        <div id="slideshow" class="dragslider">
+            <section class="img-dragger img-dragger-large dragdealer">
+                <div class="handle">
+                    <div class="slide" data-content="content-1">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/xpeng-frontal.jpg" alt="img2" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                <div class="solar-car-heading">Xpeng G3 520i Smart</div>
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">520km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">
+                                            Max Cruising Range
+                                        </div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">30 mins</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">
+                                            Full Charge Time
+                                        </div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">170km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-2">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/2021-Chery-Tiggo-3x-Diamond-Edition-8.jpg" alt="img5" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Cherry Tiggo 3XE
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">401km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">0.5 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">30%-80% Charge</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">150km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-3">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/changan-frontal.jpg" alt="img2" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                <div class="solar-car-heading">Changan Oshan</div>
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">401km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">
+                                            Max Cruising Range
+                                        </div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">50 mins</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">
+                                            Full Charge Time
+                                        </div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">130km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-4">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/byd.jpg" alt="img3" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                BYD E6
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">300km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">2 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">30%-80% Charge</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">140km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-6">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/leopaard-frontal.jpg" alt="img6" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Leopaard CS9
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">270km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">30 mins</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">30%-80% Charge</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">130km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-7">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/renaultt-frontal.jpg" alt="img4" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Renault K-ZE
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">271km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">0.5 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">30%-80% Charge</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">105km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-8">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/link-tour-frontal.jpg" alt="img1" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                Link Tour K-One
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">100km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">50 mins</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Full Charge Time</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">100km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                    <div class="slide" data-content="content-5">
+                        <div class="img-wrap">
+                            <img src="../assets/images/img/ER30.jpg" alt="img1" />
+                        </div>
+                        <h2>
+                            <span class="solar-cars-head-area">
+                                ER30
+                                <div>&nbsp;</div>
+                                <div class="flex-grid-thirds specs">
+                                    <div class="col colStart centerManAlt">
+                                        <div class="headerVal">255km</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Cruising Range</div>
+                                    </div>
+                                    <div class="col colMid centerManAlt">
+                                        <div class="headerVal">4 Hours</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Full Charge Time</div>
+                                    </div>
+                                    <div class="col centerManAlt">
+                                        <div class="headerVal">115km/h</div>
+                                        <div>&nbsp;</div>
+                                        <div class="headerText">Max Speed</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </h2>
+                        <button class="content-switch">Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="pages">
+
+                <!-- Xpeng -->
+                <div class="content" data-content="content-1">
+                    <h2>Xpeng G3 520i Smart<span>ST CUV 1</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/xpeng-inn.jpg" width="80%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">170 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">130 mm</div>
+                                <div class="headerText-Alt">
+                                    Min ground clearance
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">
+                                    Rear view camera
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/triumph-project-te1-electric-superbike-motor-integral-powertrain.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">33 kW</div>
+                                    <div class="headerText-Alt"><i class="fa fa-bolt"></i> Motor Power</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">300 N.m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">520 km</div>
+                                    <div class="headerText-Alt">
+                                        Cruising Range
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/battery1563962582339.png" alt="battery-train" width="60%" />
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs charger">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">66.5 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">12 hours</div>
+                                    <div class="headerText-Alt">Charging Time <i class="fa fa-clock-o font-green"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-1.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="imgBox centerMan">
+                                <img src="../assets/images/img/x-2.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-3.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-4.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-5.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-6.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/x-7.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Xpeng G3 520i Smart Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">
+                                            4450*1820*1610 mm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">
+                                            2625 mm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">
+                                            1637 kg
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">
+                                            5 persons
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">
+                                            Single reducer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            MacPhersan and Torsion dependent suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Multifunction steering wheel</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="xpengRent">RENT</button> -->
+                                    <button class="btn-primary" id="xpengRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    290,000
+                                </div>
+                                <div class="pricer_text">PURCHASE PRICE</div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="xpengBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Chery 3xe -->
+                <div class="content" data-content="content-2">
+                    <h2>Cherry 3XE<span>ST SUV 1</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/cherry-3xe-inner-1.jpg" width="90%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">150 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">Tire size</div>
+                                <div class="headerText-Alt">205/55 R16 mm</div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">
+                                    Rear view camera
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">95 kW</div>
+                                    <div class="headerText-Alt">Motor Power <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">250 N m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">401 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/Volvo_EV_drivetrain.png" alt="battery-train" width="90%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt"><small>30%-80% in 30mins</small></div>
+                                    <div class="headerText-Alt">Fast Charge Time</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">53.6 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/cherry-interior-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/cherry-interior-03.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/cherry-interior-04.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/cherry-interrior-02.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Cherry 3XE SUV Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">
+                                            4200*1760*1570 mm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">
+                                            2555 mm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">
+                                            1515 kg
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">
+                                            5 persons
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">
+                                            Single reducer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            MacPhersan type Independent suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Electric power steering</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-our-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="Cherry3XERent">RENT</button> -->
+                                    <button class="btn-primary" id="Cherry3XERentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    150,000
+                                </div>
+                                <div class="pricer_text">PURCHASE PRICE</div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="Cherry3XEBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- BYD E6 -->
+                <div class="content" data-content="content-4">
+                    <h2>BYD E6<span>ST CROSSOVER 1</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/BYD.png" width="80%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">140 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">120 mm</div>
+                                <div class="headerText-Alt">Minimum distance to ground</div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">Rear view camera</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">90 kW</div>
+                                    <div class="headerText-Alt"><i class="fa fa-bolt"></i> Motor Power</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">220 N m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">300 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/byd-charging.png" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt"><small>30%-80% in 2 hrs</small></div>
+                                    <div class="headerText-Alt">Fast Charge Time</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">
+                                        LiFePO<sub>4</sub>
+                                    </div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">57 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/byd-interior-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/byd-interior-03.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/byd-interior-02.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/byd-interior-04.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">BYD B6 Sedan Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">
+                                            4560*1822*1645 mm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2830 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">2380 kg</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">5 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">Double wishbone independent suspension with lateral stabilizer bar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Electric power steering</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-our-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <span><button class="btn-primary">Download full Spec List</button></span>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="BYDRent">RENT</button> -->
+                                    <button class="btn-primary" id="BYDRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    100,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="BYDBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Renault K-ZE -->
+                <div class="content" data-content="content-7">
+                    <h2>Renault K-ZE<span>ST CUV 2</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/renault-frontal.jpg" alt="sedan" width="100%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">105 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">120 mm</div>
+                                <div class="headerText-Alt">Minimum distance to ground</div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">Rear view camera</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">100 kW</div>
+                                    <div class="headerText-Alt">Motor Power <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">125 N m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">271 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/twingo-ze-plateforme-light.jpg" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">
+                                        0.5 hours from 30%-80%
+                                    </div>
+                                    <div class="headerText-Alt">Fast Charge Time</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">26.8 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/renault-in-1.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/renault-in-2.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/renault-in-3.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/renault-in-4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Renault K-ZE Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">3699*1579*1515 mm</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2423 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">
+                                            921 kg
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">4 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            MacPhersan type Independent
+                                            suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Multifunction steering</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <span><button class="btn-primary">Download full Spec List</button></span>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="RenaultRent">RENT</button> -->
+                                    <button class="btn-primary" id="RenaultRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    130,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="RenaultBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- ER30 Manual -->
+                <div class="content" data-content="content-5">
+                    <h2>ER30 Manual<span>ST COUPE 2</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/ABUIABACGAAg1-vm4QUomoWrlAMwsAk4hAc.jpg" width="80%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">115 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">Tire size</div>
+                                <div class="headerText-Alt">165/70 R14 mm</div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">Reversing radar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">60 kW</div>
+                                    <div class="headerText-Alt">Motor Power <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">200 N m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">255 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/charge.jpg" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">4 hours</div>
+                                    <div class="headerText-Alt">Charge Time <i class="fa fa-clock-o"></i>
+                                    </div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">32 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/ABUIABACGAAg2Pvm4QUo6omTzQMw2Aw4uAg.jpg" width="100%" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/er30-interior-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/er30-interior-02.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">ER30 Coupe / Hatchback Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">3775*1665*1530 mm</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2450 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">1100 kg</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">5 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            MacPhersan type Independent
+                                            suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Electric power steering</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="hatchRent">RENT</button> -->
+                                    <button class="btn-primary" id="hatchRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    80,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="hatchBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Leopaard -->
+                <div class="content" data-content="content-6">
+                    <h2>Leopaard CS9<span>ST SUV 3</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/leo.jpg" width="80%" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">130 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">135 mm</div>
+                                <div class="headerText-Alt">
+                                    Minimum distance to ground
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">
+                                    Rear view camera
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">90 kW</div>
+                                    <div class="headerText-Alt">Motor Power <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">260 N m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">270 km</div>
+                                    <div class="headerText-Alt">Cruising Range</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/leopaard-batpack.jpg" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-specs">
+                                    <div class="headerVal-Alt">30 mins from 30%-80%</div>
+                                    <div class="headerText-Alt">Fast Charge Time</div>
+                                </div>
+                                <div class="col colMid colMid-specs">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">50.38 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="imgBox centerMan">
+                                <img src="../assets/images/img/leopaard-interior-02.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-03.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-04.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-05.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-06.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-07.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-08.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-09.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-10.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-11.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-12.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/leopaard-interior-13.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Leopaard CS9 SUV Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">4315*1840*1650 mm</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2600 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">1610 kg</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">5 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            McPherson and torsion dependent suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Multifunction steering wheel</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="leopaardRent">RENT</button> -->
+                                    <button class="btn-primary" id="leopaardRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    140,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="leopaardBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Changan Oshan -->
+                <div class="content" data-content="content-3">
+                    <h2>Changan Oshan<span>ST MINI-VAN 1</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/RT_V_425084cdb8dc468cbca827ee98b6f661.jpg" width="80%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">130 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">160 mm</div>
+                                <div class="headerText-Alt">
+                                    Min ground clearance
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">
+                                    Rear view camera
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/FS505.jpg" width="100%" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">90 kW</div>
+                                    <div class="headerText-Alt"><i class="fa fa-bolt"></i> Motor Power</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">240 N.m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">401 km</div>
+                                    <div class="headerText-Alt">
+                                        Cruising Range
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/2-ev-battery-pack.jpg" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs charger">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">56.7 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">8 hours</div>
+                                    <div class="headerText-Alt">Charging Time <i class="fa fa-clock-o font-green"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/changan-interior-01.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="imgBox centerMan">
+                                <img src="../assets/images/img/changan-interior-02.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/changan-interior-03.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/changan-interior-04.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/changan-interior-05.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Changan Oshan Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">4510*1725*1685 mm</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2680 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">1520 kg</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">6 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            McPherson and torsion dependent suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Multifunction steering wheel</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="changanRent">RENT</button> -->
+                                    <button class="btn-primary" id="changanRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    160,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="changanBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+                <!-- Link Tour K-100 -->
+                <div class="content" data-content="content-8">
+                    <h2>Link Tour K-100<span>ST SUV 4</span></h2>
+                    <div class="centerMan">
+                        <img src="../assets/images/img/link-tour-01.png" width="40%" />
+                    </div>
+                    <div class="clearance centerManAlt">
+                        <div class="flex-grid-thirds specs">
+                            <div class="col colStart colStart-specs">
+                                <div class="headerVal-Alt">100 km/h</div>
+                                <div class="headerText-Alt">Max Speed</div>
+                            </div>
+                            <div class="col colMid colMid-specs">
+                                <div class="headerVal-Alt">165 mm</div>
+                                <div class="headerText-Alt">
+                                    Min ground clearance
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="headerVal-Alt">Parking</div>
+                                <div class="headerText-Alt">
+                                    Rear view camera
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/motor.jpg" alt="electric-motor" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">45 kW</div>
+                                    <div class="headerText-Alt"><i class="fa fa-bolt"></i> Motor Power</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">170 N.m</div>
+                                    <div class="headerText-Alt">Torque</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">100 km</div>
+                                    <div class="headerText-Alt">
+                                        Cruising Range
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="centerMan clearance">
+                        <div class="centerMan">
+                            <img src="../assets/images/img/sp900a1.jpg" alt="battery-train" width="80%" />
+                        </div>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs charger">
+                                <div class="col colStart colStart-Alt">
+                                    <div class="headerVal-Alt">LiFePO<sub>4</sub></div>
+                                    <div class="headerText-Alt">Battery Type</div>
+                                </div>
+                                <div class="col colMid colMid-Alt">
+                                    <div class="headerVal-Alt">46.2 kW h</div>
+                                    <div class="headerText-Alt">Battery Capacity</div>
+                                </div>
+                                <div class="col">
+                                    <div class="headerVal-Alt">8 hours</div>
+                                    <div class="headerText-Alt">Charging Time <i class="fa fa-clock-o font-green"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="owl-carousel">
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/tour-interior-1.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="imgBox centerMan">
+                                <img src="../assets/images/img/tour-interior-2.jpg" />
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="centerMan">
+                                <img src="../assets/images/img/tour-interior-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="limiter centerMan clearance">
+                        <h3 class="specs-header">Link Tour K-100 Specs</h3>
+                        <div class="centerManAlt">
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Dimensions</div>
+                                        <div class="headerText-Alt">4100*1710*1595 mm</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Wheelbase</div>
+                                        <div class="headerText-Alt">2520 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Curbweight</div>
+                                        <div class="headerText-Alt">1400 kg</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Rated passengers</div>
+                                        <div class="headerText-Alt">5 persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Transmission type</div>
+                                        <div class="headerText-Alt">Single reducer</div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Suspended system</div>
+                                        <div class="headerText-Alt">
+                                            McPherson and multi-link independent suspension
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Driver's Airbag</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Copilot Airbag</div>
+                                        <div class="headerText-Alt">
+                                            Available <i class="fa fa-check-circle-o font-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Multifunction steering wheel</div>
+                                        <div class="headerText-Alt">Available<i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Brake system (ABS+EBD)</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div class="flex-grid-thirds specs">
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Air conditioner</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col spec-list-col-container">
+                                    <div class="specs-border">
+                                        <div>Central Lock System</div>
+                                        <div class="headerText-Alt">Available <i class="fa fa-check-circle-o font-grey"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadSpecBtn">
+                            <button class="btn-primary">Download full Spec List</button>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div class="price_footer centerManAlt" style="background-color: #fff6da">
+                        <div>&nbsp;</div>
+                        <div class="flex-grid-alt-thirds specs justify-content-between">
+                            <div class="col colStart-specs">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">FLEXIBLE</span>
+                                </div>
+                                <div class="pricer_text">PER MONTH RENT</div>
+                                <div class="buyCarBtnContainer">
+                                    <!-- <button class="btn-primary" id="tourRent">RENT</button> -->
+                                    <button class="btn-primary" id="tourRentAlt">RENT</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pricer-alt">
+                                    <span class="pricer-alt_ghs">GHS</span>
+                                    150,000
+                                </div>
+                                <div class="pricer_text">
+                                    PURCHASE PRICE
+                                </div>
+                                <div class="buyCarBtnContainer">
+                                    <button class="btn-primary" id="tourBuy">BUY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="purchaserModal" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-content">
+                <span class="close" id="purchaserModalClose">&times;</span>
+                <div id="contentDiv" class="contentDiv">
+                    <div align="center">
+                        <h2>Purchase Form</h2>
+                    </div>
+                    <div>&nbsp;</div>
+                    <!--<div align="center">System Currently under maintenance, try again later.</div>-->
+                    <form id="purchaseForm">
+                        <div class="form-group">
+                            <label for="rentQuantityPurchase">Quantity</label>
+                            <input type="number" class="form-control" id="rentQuantityPurchase" aria-describedby="quantityHelp" placeholder="1" required />
+                            <small id="quantityHelp" class="form-text text-muted">Specify number of vehicles you're
+                                renting</small>
+                        </div>
+                        <!--<div class="form-group">
+                            <label for="dailyMileage">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="dailyMileage" aria-describedby="mileageHelp" placeholder="E.g. 22km" required>
+                            <small id="mileageHelp" class="form-text text-muted">Provide your average or estimated daily mileage</small>
+                        </div>-->
+                        <!--<div class="form-group">
+                            <label for="driverType">Do you prefer self-drive or a dedicated driver?</label>
+                            <select id="driverType" class="form-control" aria-describedby="driverTypeHelp" required>
+                                <option selected disabled value="" hidden>Choose an Option</option>
+                                <option value="self">Self Drive</option>
+                                <option value="dedicated">Dedicated Driver</option>
+                            </select>
+                            <small id="driverTypeHelp" class="form-text text-muted">Pick a choice</small>
+                        </div>-->
+                        <div class="form-group">
+                            <label for="paymentPurchase">Payment Plan</label>
+                            <select id="paymentPurchase" class="form-control" aria-describedby="paymentHelp" required>
+                                <option selected disabled value="" hidden>
+                                    Choose Payment Plan
+                                </option>
+                                <option value="Outright">Outright</option>
+                                <option value="3 months">3 months</option>
+                                <option value="6 months">6 months</option>
+                                <option value="1 year">1 year</option>
+                            </select>
+                            <small id="paymentHelp" class="form-text text-muted">Specify which payment plan best suits you.</small>
+                        </div>
+                        <!--<div class="form-group">
+                            <label for="commuteRoute">Estimated Daily Mileage (in km)</label>
+                            <input type="text" class="form-control" id="commuteRoute" aria-describedby="commuteRouteHelp" placeholder="Accra - Tema" required>
+                            <small id="commuteRouteHelp" class="form-text text-muted">Provide your estimated commute route</small>
+                        </div>-->
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+                            <label class="form-check-label" for="exampleCheck1">I Agree Solar Taxi's Purchase
+                                <a id="purchaseTC" style="color: #3b4eda" target="_blank">Terms and
+                                    Conditions</a></label>
+                            <div align="center">
+                                Clicking on
+                                <span style="color: #3b4eda">Continue</span>
+                                means you agree to Solar Taxi's Purchase and
+                                Hire Purchase Terms and Conditions
+                            </div>
+                        </div>
+                        <div class="previewDiv">
+                            <div class="flex-row-item">
+                                Total Fee:
+                                <strong><span id="outrightFee" style="font-size: large"></span></strong>
+                            </div>
+                            <div class="flex-row-item">
+                                Plan Fee:
+                                <strong><span id="pricerMain" style="font-size: large"></span></strong>
+                            </div>
+                            <div class="flex-row-item">
+                                Monthly Fee:
+                                <strong><span id="pricerMonthly" style="font-size: large"></span></strong>
+                            </div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div id="parentErrorDivPurchase" align="center">
+                            <div id="errorDivPurchase"></div>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div align="center">
+                            <button type="submit" class="btn btn-dark" id="continuePurchaseBtn">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="renterAltModal" class="modal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <span class="close" id="renterAltModalClose">&times;</span>
+                    <div id="contentDiv" class="contentDiv">
+                        <div class="modal-title">
+                            <h2>Your Rental</h2>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="modal-body">
+                            <div class="maintenance centerManAlt">
+                                Ooops... Overwhelming orders
+                            </div>
+                            <div>&nbsp;</div>
+                            <div class="maintenanceAlt centerManAlt">
+                                Sorry, We have over 400 orders that need processing. We will notify you when we resume taking orders.<br>
+                                This won't take long, please leave an email address so we notify you soon as we're done.
+                            </div>
+                            <div>&nbsp;</div>
+                            <form id="rentalFormAlt" onsubmit="return false">
+                                <div class="maintenanceEmail">Email</div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="subsEmail" aria-describedby="quantityHelp" placeholder="example@email.com" required />
+                                    <small id="quantityHelp" class="form-text text-muted">Enter your email address</small>
+                                </div>
+                                <div class="centerManAlt" id="maintenanceMessage"></div>
+                                <div>&nbsp;</div>
+                                <div class="centerManAlt">
+                                    <button type="submit" class="btn btn-primary" id="continueSubscribeBtn">Get Notified <span id="continueSubscribeBtnGIF"></span></button>
+                                </div>
+                            </form>
+                            <div>&nbsp;</div>
+                            <div class="centerManAlt">
+                                <small><a id="rentTC" target="_blank">Preview rental agreement</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/dragdealer.js"></script>
+    <script src="../assets/js/classie.js"></script>
+    <script src="../assets/js/dragslideshow.js"></script>
+    <script src="../assets/js/purchaser.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        (function () {
+
+            var overlay = document.getElementById("overlay"),
+                overlayClose = overlay.querySelector("button"),
+                header = document.getElementById("header"),
+                switchBtnn = header.querySelector("button.slider-switch"),
+                toggleBtnn = function () {
+
+                    if (slideshow.isFullscreen) {
+                        classie.add(switchBtnn, "view-maxi");
+                    } else {
+                        classie.remove(switchBtnn, "view-maxi");
+                    }
+
+                },
+                toggleCtrls = function () {
+
+                    if (!slideshow.isContent) {
+                        classie.add(header, "hide");
+                    }
+
+                },
+                toggleCompleteCtrls = function () {
+
+                    if (!slideshow.isContent) {
+                        classie.remove(header, "hide");
+                    }
+
+                },
+                slideshow = new DragSlideshow(
+                    document.getElementById("slideshow"),
+                    {
+                        // toggle between fullscreen and minimized slideshow
+                        onToggle: toggleBtnn,
+                        // toggle the main image and the content view
+                        onToggleContent: toggleCtrls,
+                        // toggle the main image and the content view (triggered after the animation ends)
+                        onToggleContentComplete: toggleCompleteCtrls,
+                    }
+                ),
+                toggleSlideshow = function () {
+
+                    slideshow.toggle();
+                    toggleBtnn();
+
+                },
+                closeOverlay = function () {
+                    classie.add(overlay, "hide");
+                };
+
+            // toggle between fullscreen and small slideshow
+            switchBtnn.addEventListener("click", toggleSlideshow);
+            // close overlay
+            overlayClose.addEventListener("click", closeOverlay);
+
+            $(document).ready(function () {
+
+                $('.owl-carousel').owlCarousel({
+                    center: true,
+                    items: 1,
+                    loop: true,
+                    stagePadding: 0,
+                    margin: 20,
+                    smartSpeed: 1000,
+                    autoplay: true,
+                    nav: false,
+                    dots: true,
+                    responsive: {
+                        600: {
+                            margin: 20,
+                            nav: true,
+                            items: 2
+                        },
+                        1000: {
+                            margin: 20,
+                            stagePadding: 0,
+                            nav: true,
+                            items: 3
+                        }
+                    }
+
+                });
+
+                $('.custom-next').click(function (e) {
+
+                    e.preventDefault();
+                    $('.owl-carousel').trigger('next.owl.carousel');
+
+                });
+
+                $('.custom-prev').click(function (e) {
+
+                    e.preventDefault();
+                    $('.owl-carousel').trigger('prev.owl.carousel');
+
+                });
+
+            });
+
+            AOS.init({
+                duration: 800,
+                easing: 'slide',
+                once: false
+            });
+
+        })();
+
+    </script>
+</body>
+
+</html>
